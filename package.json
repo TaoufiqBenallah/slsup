@@ -1,21 +1,28 @@
 {
-  "name": "SalesUpRealTime",
+  "name": "sales-up-real-time",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "set NODE_ENV=dev && nodemon server.js"
+    "dev": "set NODE_ENV=dev && nodemon server.js",
+    "events": "node ./modules/kafka/producers/events.js",
+    "contacts": "node ./modules/kafka/producers/contacts.js",
+    "update": "node ./modules/kafka/producers/update-events.js",
+    "consume": "node ./modules/kafka/consumers/consumer.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "avsc": "^5.7.4",
     "axios": "^0.27.2",
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "kafkajs": "^2.0.2",
     "node-fetch": "^3.2.4",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "winston": "^3.8.0"
   }
 }

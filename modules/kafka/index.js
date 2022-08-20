@@ -1,1 +1,0 @@
-// receiving data from KAFKA

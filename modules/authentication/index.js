@@ -1,1 +1,0 @@
-// security and authentication logic

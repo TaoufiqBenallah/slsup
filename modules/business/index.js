@@ -1,1 +1,0 @@
-// buisness logic and the the mapping between KAFKA and SFMC
